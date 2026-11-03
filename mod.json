@@ -3,7 +3,7 @@
   "displayName": "Mindustry Mod Studio",
   "author": "Paradew",
   "description": "In-game Mod Studio (PatchEditor for mods). Opens from MAIN MENU. Field tree, pickers, Magic Clone, HJSON. No game blocks.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "minGameVersion": "160",
   "dependencies": [],
   "hidden": false
