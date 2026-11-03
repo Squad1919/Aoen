@@ -2,8 +2,8 @@
   "name": "mindustry-mod-studio",
   "displayName": "Mindustry Mod Studio",
   "author": "Paradew",
-  "description": "In-game студия разработки модов Mindustry. Создавай units/blocks/items/JS, тестируй и экспортируй прямо из игры.",
-  "version": "1.0.0",
+  "description": "In-game Mod Studio like PatchEditor: field tree + notes, pickers, Magic Clone, raw HJSON, undo/redo, spawn. Chat /studio.",
+  "version": "1.1.0",
   "minGameVersion": "160",
   "dependencies": [],
   "hidden": false

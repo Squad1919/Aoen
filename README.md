@@ -1,25 +1,28 @@
-# Mindustry Mod Studio
+# Mindustry Mod Studio 1.1
 
-In-game среда для создания модов Mindustry (HJSON + JS), прямо внутри игры.
+In-game студия модов в духе **PatchEditor**, но для полноценных HJSON/JS модов.
+
+## Открыть
+- Чат: `/studio`
+- Sandbox: блок **Studio Terminal** → Configure
+
+## Как PatchEditor
+| PatchEditor | Mod Studio |
+|---|---|
+| Дерево полей + notes | Field tree: имя = note, значение = picker |
+| Color / Sound / Content selectors | Color, Sound, Effect, Content, Texture, Bool, BulletType |
+| Magic Export | **Clone** — юнит/блок/предмет → файлы проекта |
+| Undo / Redo | Undo / Redo в тулбаре |
+| Export HJSON | **Create** / **Save** raw HJSON в `saves/mods/<project>/` |
+| Stay in game | Spawn + Inspect без выхода |
+
+## Workflow
+1. **New** → проект в `Mindustry/saves/mods/`
+2. **Kind…** + id → правь поля пикерами
+3. **Create** → HJSON + `.SPRITE.txt` подсказки
+4. Положи PNG рядом с подсказками
+5. Mods → enable → restart
+6. **Spawn** / **Inspect**
 
 ## Установка
-
-1. Положи `mindustry-mod-studio.zip` в `Mindustry/saves/mods/`
-2. Запусти Mindustry → Mods → включи **Mindustry Mod Studio**
-3. В игре (лучше sandbox): чат `/studio` **или** поставь блок **Studio Terminal**
-
-## Возможности
-
-- Новый проект → папка в `saves/mods/`
-- Шаблоны: item, status, unit (legs/mech/flying/naval), turret, crafter, drill, wall, factory
-- Редактор HJSON/JS, сохранение файлов
-- Подсказки под спрайты (`.SPRITE.txt`)
-- Spawn юнитов для теста
-- Inspector мод-контента
-- Docs с практическими советами (oh-no буров, JS bullets, ноги…)
-
-## Лимиты
-
-Java-моды по-прежнему удобнее в IDE. Студия закрывает полный цикл **JSON/HJSON + JS** модов.
-
-Архив старого мода Aoen: `Desktop/AoenArchive/aoen-v2.4.0.zip` и `_aoen_backup/` в проекте.
+`mindustry-mod-studio.zip` → `saves/mods/` (уже в Steam mods).

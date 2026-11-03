@@ -1,16 +1,20 @@
 /**
- * Mindustry Mod Studio — entry.
- * Open: chat /studio | configure Studio Terminal / Studio Bench (sandbox)
+ * Mindustry Mod Studio — PatchEditor-class mod authoring.
+ * Open: /studio  |  Studio Terminal (sandbox configure)
  */
+require("schema");
 require("templates");
 require("projects");
+require("pickers");
+require("form");
+require("clone");
 const studio = require("studio");
 require("blocks");
 
 Events.on(ClientLoadEvent, e => {
   Timer.schedule(() => {
     try {
-      Vars.ui.showInfoToast("[accent]Mindustry Mod Studio[] — type /studio", 5);
+      Vars.ui.showInfoToast("[accent]Mod Studio[] ready — /studio  (fields • pickers • magic clone)", 5);
     } catch (err) {}
   }, 1.5);
 });
@@ -28,5 +32,4 @@ Events.on(PlayerChatEvent, e => {
 });
 
 globalThis.modStudio = studio;
-
-Log.info("[Mindustry Mod Studio] ready — /studio");
+Log.info("[Mindustry Mod Studio] PatchEditor-style UI loaded");
