@@ -2,8 +2,8 @@
   "name": "mindustry-mod-studio",
   "displayName": "Mindustry Mod Studio",
   "author": "Paradew",
-  "description": "In-game Mod Studio (PatchEditor for mods). Opens from MAIN MENU. Field tree, pickers, Magic Clone, HJSON. No game blocks.",
-  "version": "1.1.2",
+  "description": "Понятная in-game студия модов. Мастер юнита: тип → статы → оружие → спрайты → код. Кнопка в главном меню.",
+  "version": "1.2.0",
   "minGameVersion": "160",
   "dependencies": [],
   "hidden": false

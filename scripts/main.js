@@ -10,6 +10,7 @@ require("projects");
 require("pickers");
 require("form");
 require("clone");
+require("wizard");
 const studio = require("studio");
 
 var menuHooked = false;
