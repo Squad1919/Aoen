@@ -1,10 +1,10 @@
 {
-  "name": "aoen",
-  "displayName": "Aoen",
+  "name": "mindustry-mod-studio",
+  "displayName": "Mindustry Mod Studio",
   "author": "Paradew",
-  "description": "сделал Paradew. 70 блоков, электричество, юниты T1–T7, материалы Aoen.",
-  "version": "2.4.0",
-  "minGameVersion": "160.7",
+  "description": "In-game студия разработки модов Mindustry. Создавай units/blocks/items/JS, тестируй и экспортируй прямо из игры.",
+  "version": "1.0.0",
+  "minGameVersion": "160",
   "dependencies": [],
   "hidden": false
 }

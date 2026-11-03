@@ -1,0 +1,10 @@
+type: OverflowGate
+outlineIcon: false
+category: effect
+size: 1
+health: 200
+buildVisibility: sandboxOnly
+requirements: []
+research: {
+  parent: core-shard
+}

@@ -1,0 +1,10 @@
+type: Router
+outlineIcon: false
+category: effect
+size: 2
+health: 400
+buildVisibility: sandboxOnly
+requirements: []
+research: {
+  parent: core-shard
+}
