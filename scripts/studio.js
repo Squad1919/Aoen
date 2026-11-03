@@ -270,7 +270,9 @@ function saveRaw() {
 }
 
 function spawnUnit() {
-  if (Vars.player == null) return setStatus("Join a map");
+  if (Vars.state == null || Vars.player == null) {
+    return setStatus("Spawn: зайди на карту (sandbox), студия работает и из меню");
+  }
   const id = state.__id;
   const tries = [];
   if (currentProject) tries.push(currentProject + "-" + id);
@@ -337,7 +339,12 @@ function build() {
   root.top();
 
   // ===== Toolbar (PatchEditor-like) =====
-  const bar = root.table(Styles.black3).growX().get();
+  let bar;
+  try {
+    bar = root.table(Styles.black3).growX().get();
+  } catch (e) {
+    bar = root.table().growX().get();
+  }
   bar.left().defaults().pad(2);
   bar.button("New", () => createProjectDlg()).size(70, 40);
   bar.button("Folder", () => {

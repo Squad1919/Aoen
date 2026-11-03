@@ -1,8 +1,8 @@
 name: mindustry-mod-studio
 displayName: Mindustry Mod Studio
 author: Paradew
-description: "In-game Mod Studio в духе PatchEditor: дерево полей с заметками, пикеры (color/sound/content/texture), Magic Clone ванили, raw HJSON, undo/redo, spawn. Чат /studio или Studio Terminal."
-version: "1.1.0"
+description: "In-game Mod Studio (как PatchEditor для модов). Открывается кнопкой из ГЛАВНОГО МЕНЮ. Поля+пикеры, Magic Clone, HJSON. Без игровых блоков."
+version: "1.1.1"
 minGameVersion: 160
 dependencies: []
 hidden: false

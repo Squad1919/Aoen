@@ -88,12 +88,20 @@ exports.cloneBlock = function (block, projectName, newId) {
   if (block == null) throw new Error("no block");
   const id = newId || ("" + block.name).replace(/^.*-/, "") + "-clone";
   let h = "";
-  h += "type: " + block.class.getSimpleName() + "\n";
+  let typeName = "GenericCrafter";
+  try {
+    typeName = block.getClass().getSimpleName();
+  } catch (e) {
+    try {
+      typeName = "" + block;
+    } catch (e2) {}
+  }
+  h += "type: " + typeName + "\n";
   h += "outlineIcon: false\n";
   try {
     h += "category: " + block.category + "\n";
   } catch (e) {
-    h += "category: effect\n";
+    h += "category: crafting\n";
   }
   h += "size: " + block.size + "\n";
   h += "health: " + block.health + "\n";
